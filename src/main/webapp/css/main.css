@@ -1,0 +1,168 @@
+/* 왼쪽 aside 콘텐츠 */
+
+aside {
+  width: 190px;
+  float: left;
+}
+
+aside #login_box {
+  width: 186px;
+  height: 120px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+aside #login_title {
+  margin: 10px 0 0 10px;
+}
+
+aside #login_input input {
+  width: 90px;
+  height: 20px;
+  margin: ;
+  border: 1px solid #ddddd;
+}
+
+aside #login_input {
+  float: left;
+}
+
+aside #login_btn {
+  float: left;
+  margin: 3px 0 0 5px;
+}
+
+aside #input_button {
+  margin: 5px 0 0 10px;
+}
+
+aside #login_input li {
+  margin: 2px 0 0 0 0;
+}
+
+aside #join_serch {
+  margin: 20px 0 0 5px;
+}
+
+aside #guestbook {
+  width: 183px;
+  height: 120px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  box-shadow: 2px 2px 5px #dddddd;
+  margin-top: 15px;
+  padding: 10px 0 0 5px;
+}
+
+aside #guestbook li {
+  list-style-image: url(../images/icon_blue.gif);
+  margin-top: 5px;
+}
+
+aside #guestbook ul {
+  margin: 10px 0 0 40px;
+}
+
+aside #guest_title {
+  width: 165px;
+  border-bottom: 1px solid #b9b9b9;
+  margin-left: 8px;
+}
+
+/*main 콘텐츠*/
+main {
+  width: 758px;
+  float: right;
+}
+
+/* 공지, 자유게시판, 유튜브 포함 콘텐츠*/
+main section#notice_free_youtube {
+  height: 250px;
+  margin-top: 10px;
+  position: relative;
+}
+
+main section #notice {
+  /* 공지사항박스 */
+  width: 360px;
+  /* border: 1px solid red; */
+  position: absolute;
+}
+
+main section .latest_title {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 3px;
+}
+
+main section .latest_title img.latest_img {
+  float: left;
+}
+
+main section .latest_title img.more {
+  float: right;
+}
+
+main section .latest_content img.pen_img {
+  float: left;
+  margin: 5px 0 0 10px;
+}
+
+main section .latest_content ul.latest_list {
+  float: right;
+}
+
+main section .latest_content ul li {
+  padding: 5px 0 5px 0;
+}
+
+main section .latest_content ul.latest_list div.subject {
+  float: left;
+  width: 170px;
+}
+
+main section .latest_content div.date {
+  float: right;
+}
+
+main section #free {
+  /* 자유게시판박스 */
+  width: 360px;
+  margin-top: 10px;
+  position: absolute;
+  top: 120px;
+}
+
+main section #youtube {
+  /* 유튜브박스 */
+  width: 360px;
+  height: 250px;
+  position: absolute;
+  left: 380px;
+}
+
+main section #youtube_bach {
+  margin: 10px 0 0 40px;
+}
+
+/*포토갤러리*/
+
+main section #gallery_box {
+  width: 749px;
+  height: 210px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #dddddd;
+  margin: 10px 0 0 5px;
+  border: 1px solid rgb(7, 7, 7);
+}
+
+main section #gallery_list {
+  padding: 25px 0 0 18px;
+}
+
+main section .items {
+  float: left;
+  text-align: center;
+  margin: 10px 0 0 35px;
+}
