@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,15 +12,38 @@
 
     <title>클래식 기타 커뮤니티</title>
   </head>
+  
   <body>
+ 		 <%
+		 String sessionId = (String) session.getAttribute("memberId");
+			//로그인 성공하여 본 페이지를 방문하면 sessionId값은 로그인 한 아이디가 저장
+			//비로그인 상태에서 본 페이지를 방문하면 seeeionId값은 null
+			%>
+			
+			
     <div id="wrap">
       <header>
         <a href="index0.html"><img id="logo" src="images/logo.png" /></a>
-        <nav id="top_menu">HOME | LOGIN | JOIN | NOTICE</nav>
+        <nav id="top_menu">
+        	HOME | 
+        	<% if(sessionId == null){ %>
+        	LOGIN 
+        	<% } else { %>
+        	LOGOUT
+        	<% } %>
+        	
+					| 
+					<% if(sessionId == null { %>
+					JOIN 
+					 <% } else { %>
+					 LEVEL 3
+				 	 <% } %>
+				| NOTICE
+        </nav>
         <!-- <div class="clear"></div> -->
         <nav id="main_menu">
           <ul>
-            <li><a href="board_list.html">자유 게시판</a></li>
+            <li><a href="board_list.jsp">자유 게시판</a></li>
             <li><a href="#">기타 연주</a></li>
             <li><a href="#">공동 구매</a></li>
             <li><a href="#">연주회 안내</a></li>
@@ -30,7 +52,8 @@
         </nav>
       </header>
       <aside>
-        <article id="login_box">
+      <% if(sessionId == null) { %>
+        <article id="login_box">  <!-- 비로그인 상태 박스 -->
           <img id="login_title" src="images/ttl_login.png" />
           <div id="input_button">
             <form>
@@ -46,7 +69,21 @@
             <img src="images/btn_join.gif" />
             <img src="images/btn_search.gif" />
           </div>
-        </article>
+        </article>   <!--  로그인박스 끝 -->
+        
+        <%} else  {%>
+        <article id="login_box">  <!-- 로그인 성공 박스 -->
+          <img id="login_title" src="images/ttl_login.png">
+         	<br>
+         	<% sessionId %>님 로그인 중
+         	<br>
+        </article>   <!--  로그인박스 끝 -->
+        <% } %>
+        
+        
+        
+        
+        
         <article id="guestbook">
           <div id="guest_title">
             <img src="images/ttl_memo.gif" />
