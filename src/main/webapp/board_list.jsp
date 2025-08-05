@@ -15,6 +15,14 @@
     <title>클래식 기타 커뮤니티</title>
   </head>
   <body>
+  	<%
+		String sid = (String) session.getAttribute("memberId");
+		if(sid == null) {
+			response.sendRedirect("login.jsp");
+		}
+		//로그인 하지 않으면 본 페이지를 볼수 없음.
+		%>
+  
     <div id="wrap">
       <header>
         <a href="index0.html"><img id="logo" src="images/logo.png" /></a>
@@ -30,9 +38,10 @@
           </ul>
         </nav>
       </header>
+     
+     
       <aside>
-        <article id="login_box">
-          <!--로그인박스-->
+        <article id="login_box"> <!--로그인박스-->
           <img id="login_title" src="images/ttl_login.png" />
           <div id="input_button">
             <form>

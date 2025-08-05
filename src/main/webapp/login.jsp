@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h2> 로그인 </h2>
+	<h2>로그인</h2>
 	<form action="loginOk.jsp">
 		아이디 : <input type="text" name="loginId"><br><br>
-		비밀번호:  <input type="password" name="loginPw"><br><br>
+		비밀번호 : <input type="password" name="loginPw"><br><br>
 		<input type="submit" value="로그인">
 	</form>
 </body>

@@ -16,15 +16,12 @@
 		
 		
 		if(mid.equals("tiger") && mpw.equals("12345")) {
-			session.setAttribute("memberId", mid);  // 세션에 memberId 값 저장
-			response.sendRedirect("index.jsp");  // index.jsp로 강제 이동
+			session.setAttribute("memberId", mid); //세션에 memberId 값 저장
+			response.sendRedirect("index.jsp"); //index.jsp로 강제 이동
 		} else {
-			response.sendRedirect("login.jsp");  // login.jsp로 강제 이동
+			response.sendRedirect("login.jsp"); //login.jsp로 강제 이동
 		}
 	
 	%>
-
-
-
 </body>
 </html>

@@ -17,7 +17,7 @@
   <body>
     <div id="wrap">
       <header>
-        <a href="index0.html"><img id="logo" src="images/logo.png" /></a>
+        <a href="index.html"><img id="logo" src="images/logo.png" /></a>
         <nav id="top_menu">HOME | LOGIN | JOIN | NOTICE</nav>
         <!-- <div class="clear"></div> -->
         <nav id="main_menu">
